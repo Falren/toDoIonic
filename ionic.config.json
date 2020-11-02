@@ -1,0 +1,7 @@
+{
+  "name": "toDoIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
