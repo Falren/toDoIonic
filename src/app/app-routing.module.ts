@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+import { TasksComponent } from '../app/components/tasks/tasks.component';
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  { path: 'tasks',
+    component: TasksComponent 
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tasks',
     pathMatch: 'full'
   },
 ];
