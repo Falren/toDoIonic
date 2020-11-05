@@ -11,14 +11,12 @@ import { TaskFormComponent } from '../task-form/task-form.component';
 
 export class TasksComponent implements OnInit {
   active: Boolean = true;
-  activeTasks: any = [];
-  completedTasks: any = [];
+  tasks: any = [];
 
   constructor(private taskAPI: Task, private modalCtrl: ModalController) { }
 
   ngOnInit() {
     this.getTasks(true);
-    this.getTasks(false);
   }
 
   async showModal() {
@@ -35,29 +33,16 @@ export class TasksComponent implements OnInit {
     })
   }
 
-  segmentChanged(ev: any) {
-    ev.detail.value == 'active' ? this.active = true : this.active = !this.active
-  }
-
   getTasks(active) {
-    this.taskAPI.query({ active: active }).subscribe((data) => { console.log(data); this[this.taskListName(active)] = data; });
-  }
-
-  taskListName(active) {
-    const taskList = active ? 'activeTasks' : 'completedTasks';
-    return taskList;
+    this.taskAPI.query({ active: active }).subscribe((data) => { this.tasks = data; });
   }
 
   onCreateTask(task) {
-    this.activeTasks.unshift(task);
+    this.tasks.unshift(task);
   }
 
   onDeleteTask(task) {
-    if (task.active) {
-      this.activeTasks = this.activeTasks.filter((item) => this.deleteTask(item, task));
-    } else {
-      this.completedTasks = this.completedTasks.filter((item) => this.deleteTask(item, task));
-    }
+      this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
   }
 
   deleteTask(item, task) {
@@ -65,12 +50,6 @@ export class TasksComponent implements OnInit {
   }
 
   onCompleteTask(task) {
-    if (task.active) {
-      this.completedTasks = this.completedTasks.filter((item) => this.deleteTask(item, task));
-      this.activeTasks.unshift(task);
-    } else {
-      this.activeTasks = this.activeTasks.filter((item) => this.deleteTask(item, task));
-      this.completedTasks.unshift(task);
-    }
+      this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
   }
 }
