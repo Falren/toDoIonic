@@ -53,9 +53,7 @@ export class TaskComponent {
     })
     await modal.present();
     modal.onDidDismiss().then(result => {
-      this.taskAPI.update(task.id, result.data).subscribe((data) => {
-        this.task = data
-      })
+      if (result.data) this.taskAPI.update(task.id, result.data).subscribe((data) => { this.task = data })
     })
   }
 }

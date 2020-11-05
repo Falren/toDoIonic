@@ -24,8 +24,7 @@ export class TaskFormComponent implements OnInit {
   }
 
   async close() {
-    this.taskForm.value.id ? await this.modalCtrl.dismiss(this.taskForm.value) : await this.modalCtrl.dismiss()
-
+    await this.modalCtrl.dismiss()
   }
 
   async onSubmit() {

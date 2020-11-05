@@ -26,9 +26,7 @@ export class TasksComponent implements OnInit {
     })
     await modal.present();
     modal.onDidDismiss().then(result => {
-      this.taskAPI.create(result.data).subscribe((data) => {
-        this.onCreateTask(data)
-      })
+      if (result.data) this.taskAPI.create(result.data).subscribe((data) => { this.onCreateTask(data) })
     })
   }
 
@@ -37,9 +35,7 @@ export class TasksComponent implements OnInit {
   }
 
   getTasks(active) {
-    this.taskAPI.query({ active: active }).subscribe((data) => {
-      this[this.taskListName(active)] = data;
-    });
+    this.taskAPI.query({ active: active }).subscribe((data) => { this[this.taskListName(active)] = data; });
   }
 
   taskListName(active) {
