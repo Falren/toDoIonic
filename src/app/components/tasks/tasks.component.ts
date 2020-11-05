@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { on } from 'process';
 import { Task } from '../../api/task';
 import { TaskFormComponent } from '../task-form/task-form.component';
 
