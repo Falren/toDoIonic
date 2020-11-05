@@ -65,10 +65,10 @@ export class TasksComponent implements OnInit {
 
   onCompleteTask(task) {
     if (task.active) {
-      this.completedTasks = this.completedTasks.filter((item) => { return item.id != task.id });
+      this.completedTasks = this.completedTasks.filter((item) => this.deleteTask(item, task));
       this.activeTasks.unshift(task)
     } else {
-      this.activeTasks = this.activeTasks.filter((item) => { return item.id != task.id });
+      this.activeTasks = this.activeTasks.filter((item) => this.deleteTask(item, task));
       this.completedTasks.unshift(task)
     }
   }
