@@ -27,7 +27,11 @@ export class TasksComponent implements OnInit {
     })
     await modal.present();
     modal.onDidDismiss().then(result => {
-      if (result.data) this.taskAPI.create(result.data).subscribe((data) => { this.onCreateTask(data) });
+      if (result.data) this.taskAPI.create(result.data).subscribe((data) => {
+        this.onCreateTask(data) 
+      },
+      () => { this.taskAPI.presentToast() 
+      });
     })
   }
 

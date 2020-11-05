@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { AlertController, ModalController } from '@ionic/angular';
 import { Task } from '../../api';
 import { TaskFormComponent } from '../task-form/task-form.component';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-task',
@@ -17,7 +18,9 @@ export class TaskComponent {
   constructor(
     private taskAPI: Task,
     private modalCtrl: ModalController,
-    public alertController: AlertController) {}
+    public alertController: AlertController,
+    public toastController: ToastController
+    ) {}
 
   async deleteTask(task: any) {
     const alert = await this.alertController.create({
@@ -28,13 +31,15 @@ export class TaskComponent {
         {
           text: 'Cancel',
           role: 'cancel',
-          cssClass: 'secondary',
+          cssClass: 'secondary', 
         }, {
           text: 'Okay',
           handler: () => { 
             this.taskAPI.delete(task.id).subscribe((data)=> {
               this.onDeleteTask.emit(data);
-            });
+            },
+            () => { this.taskAPI.presentToast(); }
+            );
           }
         }
       ]

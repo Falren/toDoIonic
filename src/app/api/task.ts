@@ -1,10 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
+import { ToastController } from '@ionic/angular';
 
 @Injectable()
 export class Task {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public toastController: ToastController) {}
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: 'Something went wrong',
+      duration: 2000
+    });
+    toast.present();
+  }
 
   query(params?) {
     return this.http.get(`${environment.apiEndpoint}/api/v1/tasks`, { params: params });

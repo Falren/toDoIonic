@@ -21,10 +21,10 @@ export class TaskFormComponent implements OnInit {
   }
 
   async close() {
-    await this.modalCtrl.dismiss();
+    this.modalCtrl.dismiss();
   }
 
   async onSubmit() {
-    await this.modalCtrl.dismiss(this.taskForm.value);
+    this.modalCtrl.dismiss(this.taskForm.value);
   }
 }
