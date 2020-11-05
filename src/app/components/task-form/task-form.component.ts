@@ -1,7 +1,5 @@
-import { Component, Output, EventEmitter, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Task } from '../../api';
-import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -13,18 +11,17 @@ export class TaskFormComponent implements OnInit {
   taskForm: FormGroup;
   @Input() task: any = {};
   
-  constructor(private fb: FormBuilder, private taskAPI: Task, private router: Router, private modalCtrl: ModalController) { }
+  constructor(private fb: FormBuilder, private modalCtrl: ModalController) { }
 
-  
   ngOnInit(): void {
     this.taskForm = this.fb.group({
       title: [this.task.title || '', Validators.required],
       description: [this.task.description || '', Validators.required]
-    })
+    });
   }
 
   async close() {
-    await this.modalCtrl.dismiss()
+    await this.modalCtrl.dismiss();
   }
 
   async onSubmit() {

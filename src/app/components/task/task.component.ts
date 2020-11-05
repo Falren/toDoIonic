@@ -2,16 +2,22 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { AlertController, ModalController } from '@ionic/angular';
 import { Task } from '../../api';
 import { TaskFormComponent } from '../task-form/task-form.component';
+
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.scss'],
 })
+
 export class TaskComponent {
   @Input() task: any = {};
   @Output() onDeleteTask = new EventEmitter<any>();
   @Output() onCompleteTask = new EventEmitter<any>();
-  constructor(private taskAPI: Task, private modalCtrl: ModalController, public alertController: AlertController) {}
+  
+  constructor(
+    private taskAPI: Task,
+    private modalCtrl: ModalController,
+    public alertController: AlertController) {}
 
   async deleteTask(task: any) {
     const alert = await this.alertController.create({
@@ -23,12 +29,9 @@ export class TaskComponent {
           text: 'Cancel',
           role: 'cancel',
           cssClass: 'secondary',
-          handler: (blah) => {
-            console.log('Confirm Cancel: blah');
-          }
         }, {
           text: 'Okay',
-          handler: () => {
+          handler: () => { 
             this.taskAPI.delete(task.id).subscribe((data)=> {
               this.onDeleteTask.emit(data);
             });
@@ -36,14 +39,11 @@ export class TaskComponent {
         }
       ]
     });
-    await alert.present();
+    alert.present();
   }
 
-
   completeTask(taskId: number, active) {
-    this.taskAPI.update(taskId, {active: active}).subscribe((data) => {
-      this.onCompleteTask.emit(data);
-    })
+    this.taskAPI.update(taskId, {active: active}).subscribe((data) => { this.onCompleteTask.emit(data); });
   }
 
   async showModal(task: any) {
@@ -53,7 +53,7 @@ export class TaskComponent {
     })
     await modal.present();
     modal.onDidDismiss().then(result => {
-      if (result.data) this.taskAPI.update(task.id, result.data).subscribe((data) => { this.task = data })
+      if (result.data) this.taskAPI.update(task.id, result.data).subscribe((data) => { this.task = data });
     })
   }
 }

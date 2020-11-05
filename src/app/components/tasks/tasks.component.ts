@@ -8,6 +8,7 @@ import { TaskFormComponent } from '../task-form/task-form.component';
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.scss'],
 })
+
 export class TasksComponent implements OnInit {
   active: Boolean = true;
   activeTasks: any = [];
@@ -26,7 +27,7 @@ export class TasksComponent implements OnInit {
     })
     await modal.present();
     modal.onDidDismiss().then(result => {
-      if (result.data) this.taskAPI.create(result.data).subscribe((data) => { this.onCreateTask(data) })
+      if (result.data) this.taskAPI.create(result.data).subscribe((data) => { this.onCreateTask(data) });
     })
   }
 
@@ -35,7 +36,7 @@ export class TasksComponent implements OnInit {
   }
 
   getTasks(active) {
-    this.taskAPI.query({ active: active }).subscribe((data) => { this[this.taskListName(active)] = data; });
+    this.taskAPI.query({ active: active }).subscribe((data) => { console.log(data); this[this.taskListName(active)] = data; });
   }
 
   taskListName(active) {
@@ -44,7 +45,7 @@ export class TasksComponent implements OnInit {
   }
 
   onCreateTask(task) {
-    this.activeTasks.unshift(task)
+    this.activeTasks.unshift(task);
   }
 
   onDeleteTask(task) {
@@ -62,10 +63,10 @@ export class TasksComponent implements OnInit {
   onCompleteTask(task) {
     if (task.active) {
       this.completedTasks = this.completedTasks.filter((item) => this.deleteTask(item, task));
-      this.activeTasks.unshift(task)
+      this.activeTasks.unshift(task);
     } else {
       this.activeTasks = this.activeTasks.filter((item) => this.deleteTask(item, task));
-      this.completedTasks.unshift(task)
+      this.completedTasks.unshift(task);
     }
   }
 }
