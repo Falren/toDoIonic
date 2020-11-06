@@ -26,19 +26,19 @@ export class TasksComponent implements OnInit {
   ionChange(input) {
     if (input === "" ) {
       this.foundTasks = [];
-      this.taskNotFound = false
+      this.taskNotFound = false;
     } else {
-      this.taskAPI.query({ param: input }).subscribe((data) => {
+      this.taskAPI.query({ query: input }).subscribe((data) => {
         this.foundTasks = data
-        this.foundTasks.length < 1 ? this.taskNotFound = true : this.taskNotFound = false
+        this.taskNotFound = !this.foundTasks.length;
       });
     }
   }
 
   isSearchBar() {
-    this.search = ""
-    this.foundTasks = [] 
-    this.searchBar = !this.searchBar
+    this.search = "";
+    this.foundTasks = []; 
+    this.searchBar = !this.searchBar;
   }
   
   async showModal() {
@@ -49,9 +49,8 @@ export class TasksComponent implements OnInit {
     modal.onDidDismiss().then(result => {
       if (result.data) this.taskAPI.create(result.data).subscribe((data) => {
         this.onCreateTask(data) 
-      },
-      () => { this.taskAPI.presentToast() 
-      });
+      }, 
+      () => { this.taskAPI.showError() });
     })
   }
 
@@ -64,7 +63,9 @@ export class TasksComponent implements OnInit {
   }
 
   onDeleteTask(task) {
-      this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
+    this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
+    this.foundTasks = this.foundTasks.filter((item) => this.deleteTask(item, task));
+    this.taskAPI.showTaskDeleted();
   }
 
   deleteTask(item, task) {
@@ -72,6 +73,9 @@ export class TasksComponent implements OnInit {
   }
 
   onCompleteTask(task) {
-      this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
+    this.foundTasks = this.foundTasks.filter((item) => this.deleteTask(item, task))
+    this.foundTasks.unshift(task)
+    this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
+    this.taskAPI.showStatusChanged(task);
   }
 }

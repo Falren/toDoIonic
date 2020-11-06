@@ -38,7 +38,7 @@ export class TaskComponent {
             this.taskAPI.delete(task.id).subscribe((data)=> {
               this.onDeleteTask.emit(data);
             },
-            () => { this.taskAPI.presentToast(); }
+            () => { this.taskAPI.showError(); }
             );
           }
         }

@@ -1,25 +1,26 @@
 <ion-content>
   <ion-searchbar 
-    animated
+    *ngIf="searchBar" 
+    [(ngModel)]="search"
+    (ionCancel)="isSearchBar()"
+    (ionChange)="ionChange(search)"
     type="text"
     placeholder="Search tasks by title" 
     debounce="1000"
-    *ngIf="searchBar" 
-    [(ngModel)]="search"
-    (ionBlur)="isSearchBar()"
-    (ionChange)="ionChange(search)"
-    >
-  </ion-searchbar>
-  <ion-list *ngIf="searchBar">
-    <ion-item *ngFor="let task of foundTasks">{{ task.title }}</ion-item>
-    <ion-item *ngIf="taskNotFound">Nothing was found</ion-item>
-  </ion-list>
+    showCancelButton="always"
+    animated></ion-searchbar>
+  <div *ngIf="searchBar">
+    <ion-list *ngFor="let task of foundTasks">
+      <app-task [task]="task" (onDeleteTask)="onDeleteTask($event);" (onCompleteTask)="onCompleteTask($event)"></app-task>
+      <ion-item *ngIf="taskNotFound">Nothing was found</ion-item>
+    </ion-list>
+  </div>
   <div *ngIf="!searchBar">
     <ion-segment [(ngModel)]="active" (ionChange)="getTasks(active);">
-      <ion-segment-button [value]="true">
+      <ion-segment-button value="true">
         <ion-label>Active</ion-label>
       </ion-segment-button>
-      <ion-segment-button [value]="false">
+      <ion-segment-button value="false">
         <ion-label>Completed</ion-label>
       </ion-segment-button>
     </ion-segment>
