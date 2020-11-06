@@ -1,42 +1,46 @@
 <ion-content>
   <ion-searchbar 
     animated
-    [(ngModel)]="search"
     type="text"
-    *ngIf="searchBar" 
     placeholder="Search tasks by title" 
     debounce="1000"
-    (ionBlur)="isSearchBar($event)"
+    *ngIf="searchBar" 
+    [(ngModel)]="search"
+    (ionBlur)="isSearchBar()"
     (ionChange)="ionChange(search)"
     >
   </ion-searchbar>
-  <ion-list *ngIf="foundTasks">
+  <ion-list *ngIf="searchBar">
     <ion-item *ngFor="let task of foundTasks">
       {{ task.title }}
     </ion-item>
+    <ion-item *ngIf="taskNotFound">Nothing was found</ion-item>
   </ion-list>
-  <ion-segment [(ngModel)]="active" (ionChange)="getTasks(active);">
-    <ion-segment-button [value]="true">
-      <ion-label>Active</ion-label>
-    </ion-segment-button>
-    <ion-segment-button [value]="false">
-      <ion-label>Completed</ion-label>
-    </ion-segment-button>
-  </ion-segment>
-  <ion-list *ngFor="let task of tasks">
-    <app-task [task]="task" (onDeleteTask)="onDeleteTask($event);" (onCompleteTask)="onCompleteTask($event)"></app-task>
-  </ion-list>
-  <ion-fab *ngIf="active" vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="light">
-      <ion-icon name="arrow-back-circle-outline"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="showModal();" expand="block" color='primary'>
-        <ion-icon name="add-sharp"></ion-icon>
+  <div *ngIf="!searchBar">
+    <ion-segment [(ngModel)]="active" (ionChange)="getTasks(active);">
+      <ion-segment-button [value]="true">
+        <ion-label>Active</ion-label>
+      </ion-segment-button>
+      <ion-segment-button [value]="false">
+        <ion-label>Completed</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <ion-list *ngFor="let task of tasks">
+      <app-task [task]="task" (onDeleteTask)="onDeleteTask($event);" (onCompleteTask)="onCompleteTask($event)"></app-task>
+    </ion-list>
+    <ion-fab *ngIf="active" vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="light">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button (click)='isSearchBar();' expand="block" color='primary'>
-        <ion-icon name="search-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-</ion-content>
+      <ion-fab-list side="top">
+        <ion-fab-button (click)="showModal();" expand="block" color='primary'>
+          <ion-icon name="add-sharp"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button (click)='isSearchBar();' expand="block" color='primary'>
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+  </ion-content>
+  

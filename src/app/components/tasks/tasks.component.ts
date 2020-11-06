@@ -13,8 +13,9 @@ export class TasksComponent implements OnInit {
   active: Boolean = true;
   tasks: any = [];
   foundTasks: any = []; 
-  searchBar: Boolean = false;
   search: string;
+  searchBar: Boolean = false;
+  taskNotFound: Boolean = false;
 
   constructor(private taskAPI: Task, private modalCtrl: ModalController) { }
 
@@ -22,16 +23,21 @@ export class TasksComponent implements OnInit {
     this.getTasks(true);
   }
 
-  ionChange(value) {
-    if (value === "" ) {
+  ionChange(input) {
+    if (input === "" ) {
       this.foundTasks = [];
+      this.taskNotFound = false
     } else {
-      this.taskAPI.query({ param: value }).subscribe((data) => { console.log(data); this.foundTasks = data; });
+      this.taskAPI.query({ param: input }).subscribe((data) => {
+        this.foundTasks = data
+        this.foundTasks.length < 1 ? this.taskNotFound = true : this.taskNotFound = false
+      });
     }
   }
 
-  isSearchBar(input) {
-    console.log(input)
+  isSearchBar() {
+    this.search = ""
+    this.foundTasks = [] 
     this.searchBar = !this.searchBar
   }
   
