@@ -11,9 +11,7 @@
     >
   </ion-searchbar>
   <ion-list *ngIf="searchBar">
-    <ion-item *ngFor="let task of foundTasks">
-      {{ task.title }}
-    </ion-item>
+    <ion-item *ngFor="let task of foundTasks">{{ task.title }}</ion-item>
     <ion-item *ngIf="taskNotFound">Nothing was found</ion-item>
   </ion-list>
   <div *ngIf="!searchBar">
@@ -42,5 +40,4 @@
       </ion-fab-list>
     </ion-fab>
   </div>
-  </ion-content>
-  
+</ion-content>
