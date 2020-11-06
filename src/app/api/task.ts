@@ -7,12 +7,36 @@ import { ToastController } from '@ionic/angular';
 export class Task {
   constructor(private http: HttpClient, public toastController: ToastController) {}
 
-  async presentToast() {
+  async showError() {
     const toast = await this.toastController.create({
       message: 'Something went wrong',
       duration: 2000
     });
     toast.present();
+  }
+
+  async showTaskDeleted(){
+    const toast = await this.toastController.create({
+      message: 'Task has been deleted!',
+      duration: 2000
+    });
+    toast.present();
+  }
+
+  async showStatusChanged(task) {
+    if (!task.active) {
+      const toast = await this.toastController.create({
+        message: 'Task has been completed!',
+        duration: 2000
+      });
+      toast.present();
+    } else if (task.active) {
+      const toast = await this.toastController.create({
+        message: 'Task has been undone!',
+        duration: 2000
+      });
+      toast.present();
+    } 
   }
 
   query(params?) {
