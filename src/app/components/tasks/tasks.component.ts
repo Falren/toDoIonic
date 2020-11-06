@@ -12,6 +12,9 @@ import { TaskFormComponent } from '../task-form/task-form.component';
 export class TasksComponent implements OnInit {
   active: Boolean = true;
   tasks: any = [];
+  foundTasks: any = []; 
+  searchBar: Boolean = false;
+  search: string;
 
   constructor(private taskAPI: Task, private modalCtrl: ModalController) { }
 
@@ -19,6 +22,19 @@ export class TasksComponent implements OnInit {
     this.getTasks(true);
   }
 
+  ionChange(value) {
+    if (value === "" ) {
+      this.foundTasks = [];
+    } else {
+      this.taskAPI.query({ param: value }).subscribe((data) => { console.log(data); this.foundTasks = data; });
+    }
+  }
+
+  isSearchBar(input) {
+    console.log(input)
+    this.searchBar = !this.searchBar
+  }
+  
   async showModal() {
     const modal = await this.modalCtrl.create({
       component: TaskFormComponent

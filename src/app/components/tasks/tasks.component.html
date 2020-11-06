@@ -1,4 +1,20 @@
 <ion-content>
+  <ion-searchbar 
+    animated
+    [(ngModel)]="search"
+    type="text"
+    *ngIf="searchBar" 
+    placeholder="Search tasks by title" 
+    debounce="1000"
+    (ionBlur)="isSearchBar($event)"
+    (ionChange)="ionChange(search)"
+    >
+  </ion-searchbar>
+  <ion-list *ngIf="foundTasks">
+    <ion-item *ngFor="let task of foundTasks">
+      {{ task.title }}
+    </ion-item>
+  </ion-list>
   <ion-segment [(ngModel)]="active" (ionChange)="getTasks(active);">
     <ion-segment-button [value]="true">
       <ion-label>Active</ion-label>
@@ -11,8 +27,16 @@
     <app-task [task]="task" (onDeleteTask)="onDeleteTask($event);" (onCompleteTask)="onCompleteTask($event)"></app-task>
   </ion-list>
   <ion-fab *ngIf="active" vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="showModal()" expand="block">
-      <ion-icon name="add-sharp"></ion-icon>
+    <ion-fab-button color="light">
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
     </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="showModal();" expand="block" color='primary'>
+        <ion-icon name="add-sharp"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)='isSearchBar();' expand="block" color='primary'>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
   </ion-fab>
 </ion-content>
