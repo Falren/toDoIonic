@@ -21,6 +21,14 @@ export class TaskComponent {
     public alertController: AlertController,
     public toastController: ToastController
     ) {}
+  
+  async showToast(message) {
+    const toast = await this.toastController.create({
+      message: message,
+      duration: 2000
+    });
+    toast.present();
+  }
 
   async deleteTask(task: any) {
     const alert = await this.alertController.create({
@@ -38,7 +46,7 @@ export class TaskComponent {
             this.taskAPI.delete(task.id).subscribe((data)=> {
               this.onDeleteTask.emit(data);
             },
-            () => { this.taskAPI.showError(); }
+            () => { this.showToast('Something went wrong'); }
             );
           }
         }

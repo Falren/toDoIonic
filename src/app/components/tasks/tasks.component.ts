@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, ToastController } from '@ionic/angular';
 import { Task } from '../../api/task';
 import { TaskFormComponent } from '../task-form/task-form.component';
 
@@ -17,10 +17,21 @@ export class TasksComponent implements OnInit {
   searchBar: Boolean = false;
   taskNotFound: Boolean = false;
 
-  constructor(private taskAPI: Task, private modalCtrl: ModalController) { }
+  constructor(
+    private taskAPI: Task,
+    private modalCtrl: ModalController,
+    public toastController: ToastController) { }
 
   ngOnInit() {
     this.getTasks(true);
+  }
+
+  async showToast(message) {
+    const toast = await this.toastController.create({
+      message: message,
+      duration: 2000
+    });
+    toast.present();
   }
 
   ionChange(input) {
@@ -50,7 +61,7 @@ export class TasksComponent implements OnInit {
       if (result.data) this.taskAPI.create(result.data).subscribe((data) => {
         this.onCreateTask(data) 
       }, 
-      () => { this.taskAPI.showError() });
+      () => { this.showToast('Task has been successfully created!') });
     })
   }
 
@@ -65,7 +76,7 @@ export class TasksComponent implements OnInit {
   onDeleteTask(task) {
     this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
     this.foundTasks = this.foundTasks.filter((item) => this.deleteTask(item, task));
-    this.taskAPI.showTaskDeleted();
+    this.showToast('');
   }
 
   deleteTask(item, task) {
@@ -76,6 +87,6 @@ export class TasksComponent implements OnInit {
     this.foundTasks = this.foundTasks.filter((item) => this.deleteTask(item, task))
     this.foundTasks.unshift(task)
     this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
-    this.taskAPI.showStatusChanged(task);
+    this.showToast('');
   }
 }
