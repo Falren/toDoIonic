@@ -76,7 +76,7 @@ export class TasksComponent implements OnInit {
   onDeleteTask(task) {
     this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
     this.foundTasks = this.foundTasks.filter((item) => this.deleteTask(item, task));
-    this.showToast('');
+    this.showToast('Task has been deleted');
   }
 
   deleteTask(item, task) {
@@ -87,6 +87,6 @@ export class TasksComponent implements OnInit {
     this.foundTasks = this.foundTasks.filter((item) => this.deleteTask(item, task))
     this.foundTasks.unshift(task)
     this.tasks = this.tasks.filter((item) => this.deleteTask(item, task));
-    this.showToast('');
+    this.showToast(task.active ? 'Task has been undone' : 'Task has been completed');
   }
 }
