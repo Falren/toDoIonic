@@ -1,15 +1,12 @@
 {
   "name": "toDoIonic",
   "version": "0.0.1",
+  "main": "electron/main.js",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "private": true,
   "dependencies": {
@@ -58,5 +55,15 @@
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "build": {
+    "appId": "https://io-to-do.web.app/tasks",
+    "files": [
+      "electron/main.js",
+      "www/**/*"
+    ],
+    "mac": {
+      "category": "productivity"
+    }
+  }
 }
