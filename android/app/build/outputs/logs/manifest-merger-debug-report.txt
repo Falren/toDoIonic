@@ -1,0 +1,554 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:34:9-42:20
+	android:grantUriPermissions
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:38:13-47
+	android:authorities
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:36:13-64
+	android:exported
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:35:13-62
+manifest
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+MERGED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-50:12
+MERGED from [com.google.android.material:material:1.1.0-rc02] /home/falren/.gradle/caches/transforms-2/files-2.1/153ebed283bc1c42f03c8eb62a1084a4/material-1.1.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/02349dd37ff3b838bc51bcb2aaf1f853/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [:capacitor-cordova-android-plugins] /home/falren/toDoIonic/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0ee86f03afa30fbe93aa2f48d6df112d/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70aefb51edc4a6d2a42715f675b34b28/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/a95acee80dafd3288508baa42c6e17e6/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1598c7b36904684496bdcb81ee4b48b2/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/86d7e9d3f12dd508aa28064b6dd406cf/jetified-firebase-installations-interop-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/68d7aca381ef598f239f243fc5576c82/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/30b2d5b6a91a8298555a55fc6924ac26/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70ce3c5478aa202e2010f045ca784c31/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/76824fdfe63ea1ddc569015466f18946/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f94e053a1013f3d2f3399965779fd12f/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/71cae51c181918765e8846fd13e67887/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/5e8e7124cf76b3afb7d5688dae9741a5/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0c4cc8b448ee42a242371674522c3c8f/browser-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/cf63d42212627e4a7263d348980319c4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0ee1000b6cc9e588b3f4502935c5b26f/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/5d579bc30320f2e23ade44a611dc667d/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0409a373f27061dff94c0c4632cf879b/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d55e0919dfbd980801e56a21c1bfc862/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d07c23c57c5bbc57a8a04d62126aeb16/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/656a8b1038cfc80ac0d5e8d7e189ca7b/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/779eee083c3f44a0033d3525815a144d/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1881c1bcf5de34e12386e4d86a3b60ea/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/4bc1db88a6e00cecef376b8809988fa0/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/b7ece2662e5834a5b40ad53914a62cdd/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/c31ad0ad1b93fab01fe1484fe239c29e/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/cc68c417fe9d8405f820070e0f75bbbd/exifinterface-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/286143be83c357588807171922603da5/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/8643ae54d559984bab3831e941efe634/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9e199f9b2806f9a73d8410e7b25bbd9a/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/915763e66c5bf2b8d0b13f7ce036512a/jetified-firebase-components-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/19d4b95847ee97a0d6096140eee0aebd/jetified-firebase-encoders-json-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/3a585cdae8051e11e543a56709eebc2d/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e5faaa2f85bca29bda333fb31a4616c1/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/52410fe1003ad3431e8f92a089d01497/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/8732324b72c951491a9eb836f02a1ff5/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f0142f742828bb32c8f460971dd851b9/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/6a0c80888b653e462388a35d808c98de/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/86723420d28af30ba5283a8ea44c4773/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f7b4c14e17ef6ba0e102d9abb4ebb4d8/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.apache.cordova:framework:7.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/c16b82b48fc7455ec733b56f5ff8a28d/jetified-framework-7.0.0/AndroidManifest.xml:20:1-27:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d126218e77022f681454ebaea8d1706b/jetified-transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+	package
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:1-63:12
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:5:5-43:19
+MERGED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-48:19
+MERGED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-48:19
+MERGED from [com.google.android.material:material:1.1.0-rc02] /home/falren/.gradle/caches/transforms-2/files-2.1/153ebed283bc1c42f03c8eb62a1084a4/material-1.1.0-rc02/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-rc02] /home/falren/.gradle/caches/transforms-2/files-2.1/153ebed283bc1c42f03c8eb62a1084a4/material-1.1.0-rc02/AndroidManifest.xml:22:5-20
+MERGED from [:capacitor-cordova-android-plugins] /home/falren/toDoIonic/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-13:19
+MERGED from [:capacitor-cordova-android-plugins] /home/falren/toDoIonic/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-13:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/a95acee80dafd3288508baa42c6e17e6/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/a95acee80dafd3288508baa42c6e17e6/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1598c7b36904684496bdcb81ee4b48b2/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1598c7b36904684496bdcb81ee4b48b2/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/68d7aca381ef598f239f243fc5576c82/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/68d7aca381ef598f239f243fc5576c82/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/30b2d5b6a91a8298555a55fc6924ac26/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/30b2d5b6a91a8298555a55fc6924ac26/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70ce3c5478aa202e2010f045ca784c31/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70ce3c5478aa202e2010f045ca784c31/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/76824fdfe63ea1ddc569015466f18946/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/76824fdfe63ea1ddc569015466f18946/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/b7ece2662e5834a5b40ad53914a62cdd/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/b7ece2662e5834a5b40ad53914a62cdd/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/286143be83c357588807171922603da5/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/286143be83c357588807171922603da5/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:25:5-39:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/b7ece2662e5834a5b40ad53914a62cdd/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:11:9-40
+activity#io.ionic.starter.MainActivity
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:13:9-32:20
+	android:label
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:16:13-56
+	android:launchMode
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:18:13-44
+	android:configChanges
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:14:13-129
+	android:theme
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:17:13-62
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:15:13-57
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:22:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/custom_url_scheme
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:25:13-30:29
+action#android.intent.action.VIEW
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:27:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:28:17-78
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:28:27-75
+data
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:29:17-68
+	android:scheme
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:29:23-65
+uses-permission#android.permission.INTERNET
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:47:5-67
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:47:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:49:5-79
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:49:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:50:5-81
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:50:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:52:5-81
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:52:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:53:5-79
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:53:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:54:5-66
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:54:19-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:56:5-79
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:56:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:59:5-65
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:59:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:61:5-71
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:61:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:62:5-79
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:62:22-77
+uses-sdk
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+MERGED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0-rc02] /home/falren/.gradle/caches/transforms-2/files-2.1/153ebed283bc1c42f03c8eb62a1084a4/material-1.1.0-rc02/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-rc02] /home/falren/.gradle/caches/transforms-2/files-2.1/153ebed283bc1c42f03c8eb62a1084a4/material-1.1.0-rc02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/02349dd37ff3b838bc51bcb2aaf1f853/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/02349dd37ff3b838bc51bcb2aaf1f853/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [:capacitor-cordova-android-plugins] /home/falren/toDoIonic/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:capacitor-cordova-android-plugins] /home/falren/toDoIonic/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0ee86f03afa30fbe93aa2f48d6df112d/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0ee86f03afa30fbe93aa2f48d6df112d/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70aefb51edc4a6d2a42715f675b34b28/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70aefb51edc4a6d2a42715f675b34b28/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/a95acee80dafd3288508baa42c6e17e6/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/a95acee80dafd3288508baa42c6e17e6/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1598c7b36904684496bdcb81ee4b48b2/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1598c7b36904684496bdcb81ee4b48b2/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/86d7e9d3f12dd508aa28064b6dd406cf/jetified-firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/86d7e9d3f12dd508aa28064b6dd406cf/jetified-firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/68d7aca381ef598f239f243fc5576c82/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/68d7aca381ef598f239f243fc5576c82/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/30b2d5b6a91a8298555a55fc6924ac26/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/30b2d5b6a91a8298555a55fc6924ac26/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70ce3c5478aa202e2010f045ca784c31/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/70ce3c5478aa202e2010f045ca784c31/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/76824fdfe63ea1ddc569015466f18946/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/76824fdfe63ea1ddc569015466f18946/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f94e053a1013f3d2f3399965779fd12f/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f94e053a1013f3d2f3399965779fd12f/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/71cae51c181918765e8846fd13e67887/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/71cae51c181918765e8846fd13e67887/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/5e8e7124cf76b3afb7d5688dae9741a5/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/5e8e7124cf76b3afb7d5688dae9741a5/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0c4cc8b448ee42a242371674522c3c8f/browser-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0c4cc8b448ee42a242371674522c3c8f/browser-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/cf63d42212627e4a7263d348980319c4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/cf63d42212627e4a7263d348980319c4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0ee1000b6cc9e588b3f4502935c5b26f/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0ee1000b6cc9e588b3f4502935c5b26f/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/5d579bc30320f2e23ade44a611dc667d/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/5d579bc30320f2e23ade44a611dc667d/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0409a373f27061dff94c0c4632cf879b/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0409a373f27061dff94c0c4632cf879b/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d55e0919dfbd980801e56a21c1bfc862/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d55e0919dfbd980801e56a21c1bfc862/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d07c23c57c5bbc57a8a04d62126aeb16/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d07c23c57c5bbc57a8a04d62126aeb16/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/656a8b1038cfc80ac0d5e8d7e189ca7b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/656a8b1038cfc80ac0d5e8d7e189ca7b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/779eee083c3f44a0033d3525815a144d/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/779eee083c3f44a0033d3525815a144d/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1881c1bcf5de34e12386e4d86a3b60ea/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/1881c1bcf5de34e12386e4d86a3b60ea/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/4bc1db88a6e00cecef376b8809988fa0/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/4bc1db88a6e00cecef376b8809988fa0/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/b7ece2662e5834a5b40ad53914a62cdd/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/b7ece2662e5834a5b40ad53914a62cdd/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/c31ad0ad1b93fab01fe1484fe239c29e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/c31ad0ad1b93fab01fe1484fe239c29e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/cc68c417fe9d8405f820070e0f75bbbd/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/cc68c417fe9d8405f820070e0f75bbbd/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/286143be83c357588807171922603da5/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/286143be83c357588807171922603da5/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/8643ae54d559984bab3831e941efe634/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/8643ae54d559984bab3831e941efe634/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9e199f9b2806f9a73d8410e7b25bbd9a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9e199f9b2806f9a73d8410e7b25bbd9a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/915763e66c5bf2b8d0b13f7ce036512a/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/915763e66c5bf2b8d0b13f7ce036512a/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/19d4b95847ee97a0d6096140eee0aebd/jetified-firebase-encoders-json-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/19d4b95847ee97a0d6096140eee0aebd/jetified-firebase-encoders-json-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/3a585cdae8051e11e543a56709eebc2d/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/3a585cdae8051e11e543a56709eebc2d/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e5faaa2f85bca29bda333fb31a4616c1/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e5faaa2f85bca29bda333fb31a4616c1/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/52410fe1003ad3431e8f92a089d01497/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/52410fe1003ad3431e8f92a089d01497/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/8732324b72c951491a9eb836f02a1ff5/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/8732324b72c951491a9eb836f02a1ff5/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f0142f742828bb32c8f460971dd851b9/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f0142f742828bb32c8f460971dd851b9/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/6a0c80888b653e462388a35d808c98de/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/6a0c80888b653e462388a35d808c98de/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/86723420d28af30ba5283a8ea44c4773/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/86723420d28af30ba5283a8ea44c4773/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f7b4c14e17ef6ba0e102d9abb4ebb4d8/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/f7b4c14e17ef6ba0e102d9abb4ebb4d8/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/c16b82b48fc7455ec733b56f5ff8a28d/jetified-framework-7.0.0/AndroidManifest.xml:25:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/c16b82b48fc7455ec733b56f5ff8a28d/jetified-framework-7.0.0/AndroidManifest.xml:25:5-44
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d126218e77022f681454ebaea8d1706b/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/d126218e77022f681454ebaea8d1706b/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:39:13-41:64
+	android:resource
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:41:17-51
+	android:name
+		ADDED from /home/falren/toDoIonic/android/app/src/main/AndroidManifest.xml:40:17-67
+uses-feature#android.hardware.camera
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-47
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-68
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-65
+service#com.getcapacitor.plugin.background.BackgroundTaskService
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-84
+receiver#com.getcapacitor.plugin.notification.TimedNotificationPublisher
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-100
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:19-97
+receiver#com.getcapacitor.plugin.notification.NotificationDismissReceiver
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-101
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:19-98
+meta-data#firebase_messaging_auto_init_enabled
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:9-28:37
+	android:value
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-34
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-64
+service#com.getcapacitor.CapacitorFirebaseMessagingService
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:9-36:19
+	android:stopWithTask
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-41
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-78
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-35:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:17-78
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:25-75
+receiver#com.getcapacitor.plugin.notification.LocalNotificationRestoreReceiver
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-47:20
+	android:exported
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
+	android:directBootAware
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-43
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-97
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.LOCKED_BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-46:29
+action#android.intent.action.LOCKED_BOOT_COMPLETED
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:17-86
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:25-83
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:17-79
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:17-82
+	android:name
+		ADDED from [:capacitor-android] /home/falren/toDoIonic/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:25-79
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:35:9-41:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:37:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:36:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /home/falren/.gradle/caches/transforms-2/files-2.1/4b58001b7cb9fdc7d3a3643988e478e5/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /home/falren/.gradle/caches/transforms-2/files-2.1/ba4b91f7749cf16eaa5a9ef16def50aa/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /home/falren/.gradle/caches/transforms-2/files-2.1/92fb36826011867fd6384383354e1e6d/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:25-78
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/0f9c36339d607ce6531a21851bdcf328/jetified-firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/falren/.gradle/caches/transforms-2/files-2.1/808dcfd3972c389f6bf87665707819cc/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/90313ba66b87b61c38214f0d48a2ba22/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/falren/.gradle/caches/transforms-2/files-2.1/e2f3931a74b13a0da0ca4f47c74803da/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/425dd70ae6b64700d76f8c836fb1da48/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /home/falren/.gradle/caches/transforms-2/files-2.1/9de2089f200afd521d1d0ac13a8a2a44/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132

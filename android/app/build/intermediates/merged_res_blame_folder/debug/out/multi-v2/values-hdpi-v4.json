@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/falren/toDoIonic/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/falren/.gradle/caches/transforms-2/files-2.1/02349dd37ff3b838bc51bcb2aaf1f853/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
